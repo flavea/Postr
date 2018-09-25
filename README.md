@@ -9,6 +9,7 @@ This contains:
  - Adding and deleting tags/category
  - Commenting and favoriting posts
  - Seeing users list and profiles
+ - Updating profile data and image
  - Following and unfollowing users
  - See posts list in certains tags/category
 
