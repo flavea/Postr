@@ -6,7 +6,7 @@
       <router-link class="item" :to="`/${user.username}`"><ui-icon-button color="black" icon="account_circle" size="large" type="secondary" v-show="isLoggedIn"></ui-icon-button></router-link>
       <router-link class="item" to="/settings/profile"><ui-icon-button color="black" icon="settings" size="large" type="secondary" v-show="isLoggedIn"></ui-icon-button></router-link>
         <a class="item" @click="logout"><ui-icon-button color="black" icon="exit_to_app" size="large" type="secondary" v-show="isLoggedIn"></ui-icon-button></a>
-      <router-link class="item" to="/signup" v-show="!isLoggedIn"><ui-icon-button color="black" icon="account_circle" size="large" type="secondary"></ui-icon-button></router-link>
+      <router-link class="item" to="/register" v-show="!isLoggedIn"><ui-icon-button color="black" icon="account_circle" size="large" type="secondary"></ui-icon-button></router-link>
     </div>
   </ui-toolbar>
 </template>

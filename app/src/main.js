@@ -12,16 +12,13 @@ import 'materialize-css/dist/css/materialize.min.css';
 import wysiwyg from "vue-wysiwyg";
 import "vue-wysiwyg/dist/vueWysiwyg.css";
 
-// reference axios globally
 window.axios = axios
 
-// Global axios defaults
 axios.defaults.baseURL = 'http://127.0.0.1:3333'
 
-// register vee validate plugin
 Vue.use(VeeValidate)
 Vue.use(KeenUI);
-Vue.use(wysiwyg, {}); // config is optional. more below
+Vue.use(wysiwyg, {});
 
 Vue.filter('truncate', function(text, stop, clamp) {
     return text.slice(0, stop) + (stop < text.length ? clamp || '...' : '')
@@ -36,12 +33,10 @@ Vue.filter('strip', function(value) {
 
 Vue.config.productionTip = false
 
-// Global filter to format dates with momentjs
 Vue.filter('timeAgo', date => moment(date).fromNow())
 Vue.filter('joined', date => moment(date).format('MMMM YYYY'))
 Vue.filter('dob', date => moment(date).format('MMMM Do YYYY'))
 
-/* eslint-disable no-new */
 new Vue({
     el: '#app',
     router,

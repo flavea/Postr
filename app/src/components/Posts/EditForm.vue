@@ -7,7 +7,7 @@
         <wysiwyg name="post" v-model="post" placeholder="Post Content" />
         <br>
         <p>
-          <ui-autocomplete label="Tags" name="tag" placeholder="Type your tag and click enter" :suggestions="autocompleteList"
+          <ui-autocomplete label="Tags" name="tag" placeholder="Type your tag and click comma" :suggestions="autocompleteList"
             v-model="tag" @keyup.188.native="addCategory"></ui-autocomplete>
         </p>
 

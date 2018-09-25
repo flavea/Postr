@@ -24,7 +24,7 @@
 
         </div>
         <div class="card-action">
-          Don't have an account? <router-link to="/signup">Sign Up</router-link>
+          Don't have an account? <router-link to="/register">Sign Up</router-link>
         </div>
       </div>
 

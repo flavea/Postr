@@ -26,7 +26,7 @@ export default new Router({
             component: Users
         },
         {
-            path: '/signup',
+            path: '/register',
             component: SignUpForm
         },
         {
