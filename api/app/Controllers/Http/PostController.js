@@ -115,10 +115,10 @@ class PostController {
             .where('id', params.id)
             .firstOrFail()
 
-        const favorite = await Favorite.query().where('post_id', params.id)
+        const favorites = await Favorite.query().where('post_id', params.id)
 
         await post.delete()
-        await favorite.delete()
+        await favorites.delete()
 
         return response.json({
             status: 'success',
