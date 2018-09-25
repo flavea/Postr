@@ -30,9 +30,7 @@ You can preview the application at https://postr-app.herokuapp.com/
  4. Create the tables through the command prompt by running migration using the following:
 ````adonis migration:run````
 5. find the .env.example file in the api folder, change the extension into .env only
-5. Run the database using:
-
-````adonis serve````
+5. Run the database using: ````adonis serve````
 Your api can be accessed through http://127.0.0.1:3333
 
 **Run  the application**
