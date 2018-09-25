@@ -25,6 +25,7 @@
     created() {
       EventBus.$on('loggedIn', this.fetchAuthenticatedUser)
       EventBus.$on('loggedOut', this.fetchAuthenticatedUser)
+      EventBus.$on('userUpdated', this.fetchAuthenticatedUser)
       this.fetchAuthenticatedUser()
     },
     methods: {

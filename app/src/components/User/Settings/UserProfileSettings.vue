@@ -58,6 +58,7 @@
   import Notification from '@/components/Parts/Notification'
   import UserSettingsMenu from '@/components/User/Settings/UserSettingsMenu'
   import Menu from '@/components/Parts/Menu'
+  import EventBus from '@/EventBus'
 
   export default {
     name: 'UserProfileSettings',
@@ -158,7 +159,7 @@
             }
           )
           .then(response => {
-            // display success notification
+            EventBus.$emit('userUpdated', response.data.data)
             this.notification = Object.assign({}, this.notification, {
               message: response.data.message,
               type: 'success'
